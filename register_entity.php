@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "qu_miniproject";
+$database = "admin_panel";
 
 // Create a connection
 $conn = mysqli_connect($servername, $username, $password, $database);
@@ -57,7 +57,11 @@ if(isset($_POST['register_email']) && isset($_POST['terms_agreed'])) {
                           VALUES ('$email', '$password', '$name', '$student_id', '$passing_year', '$department_no', '$target_file', '$gender')";
 
             if (mysqli_query($conn, $sql_query)) {
-                echo "New Details Entry inserted Successfully !";
+                //echo "New Details Entry inserted Successfully !";
+                echo "<script>
+window.location.href='index.php';
+alert('New Details Entry inserted Successfully !');
+</script>";
             } else {
                 echo "Error: " . $sql_query . " " . mysqli_error($conn);
             }
@@ -65,8 +69,39 @@ if(isset($_POST['register_email']) && isset($_POST['terms_agreed'])) {
             echo "Sorry, there was an error uploading your file.";
         }
     }
+
+    /*if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }*/
+    
+    if (isset($_POST['login_id']) && isset($_POST['login_password'])) {
+        $login_id = $_POST['login_id'];
+        $login_password = $_POST['login_password'];
+    
+        // Query the database to check if the user exists
+        $sql_query = "SELECT * FROM users WHERE email='$login_id' AND password='$login_password'";
+        $result = mysqli_query($conn, $sql_query);
+    
+        if (mysqli_num_rows($result) == 1) {
+            // User is found, store user information in session
+            $user = mysqli_fetch_assoc($result);
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['user_name'] = $user['name'];
+            // Redirect to a logged-in page
+            header("Location: index.php"); // Create welcome.php for logged-in users
+            exit();
+        } else {
+            // Login failed, display an error message or redirect to a login error page
+            echo "Login failed. Please check your credentials.";
+        }
+    }
+
+
+
+
     mysqli_close($conn);
 }
+
 ?>
 
     
