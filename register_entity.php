@@ -104,4 +104,3 @@ alert('New Details Entry inserted Successfully !');
 
 ?>
 
-    

@@ -68,6 +68,7 @@ function login($db,$email,$password){
   {
     // checking email and password
     $check_user="SELECT email, password FROM admin_profile WHERE email='$email' AND password='$password'";
+    //echo $check_user; die();
     $run_user= mysqli_query($db,$check_user);
     if(mysqli_num_rows($run_user)>0)
      {

@@ -8,15 +8,15 @@
                             <div class="single-widget-wrap">
                                 <div class="widgei-body">
                                     <div class="footer-about">
-                                        <img src="assets/images/logo/footer-logo.svg" alt="Logo" class="img-fluid" />
+                                        <img src="assets/images/logo/showClientLogo.png" alt="Logo" class="img-fluid" />
                                         <p>
-                                            We are legend Lorem ipsum dolor sitmet,
-                                            nsecte ipisicing eit, sed do eiusmod tempor
-                                            incidunt ut et do maga aliqua enim ad minim.
+                                        Quantum University is a private university in Uttarakhand, India.
+                                        The University was earlier known as Quantum Global Campus Roorkee.
+                                
                                         </p>
-                                        <a href="#">Phone: +8745 44 5444</a>
-                                        <a href="#">Fax: +88474 156 362</a> <br />
-                                        <a href="#">Email: demoemail@demo.com</a>
+                                        <a href="#">Phone: +91 8083500238</a>
+                                        <a href="#">Twiiter: QuantumUniversity</a> <br />
+                                        <a href="#">Email: quantumfossil@gmail.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -29,8 +29,8 @@
                                 <h4 class="widget-title">Get In Touch</h4>
                                 <div class="widgei-body">
                                     <p>
-                                        We are legend Lorem ipsum dolor sitmet, nsecte
-                                        ipisicing eit, sed
+                                        If you want to get regular updates,
+                                        You can connect us just by registering your email.
                                     </p>
                                     <div class="newsletter-form">
                                         <form id="cbx-subscribe-form">
@@ -102,7 +102,7 @@
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <div class="footer-bottom-text">
-                                <p>© 2023 Codeboxr, All Rights Reserved.</p>
+                                <p>© 2023 QuantumUniversity, All Rights Reserved.</p>
                             </div>
                         </div>
                     </div>

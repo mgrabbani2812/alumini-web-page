@@ -64,16 +64,16 @@
                                                         <div class="signin-area-wrap">
                                                             <h4>Already a Member?</h4>
                                                             <div class="sign-form">
-                                                                <!--<form action="index.php"  method="post" enctype="multipart/form-data">
+                                                                <form action="login.php"  method="post" enctype="multipart/form-data">
                                                                     <input type="text" placeholder="Enter your ID">
                                                                     <input type="password" placeholder="Password">
                                                                     <button type="submit" class="btn btn-reg">Login</button>
                                                                 </form>
-                                                                <form action="index.php" method="post">
+                                                                <!--<form action="index.php" method="post">
                                                                 <input type="email" placeholder="Enter your ID" name="login_id">
                                                                 <input type="password" placeholder="Password" name="login_password">
                                                                 <button type="submit" class="btn btn-reg">Login</button>
-                                                                </form> -->
+                                                                </form> 
                                                                 <form class="login_form" action="login_status.php" method="post">
                                                                     <select name="login_usertype" >
                                                                     <option value="alumni">Alumni</option>
@@ -85,7 +85,7 @@
                                                                     <button type="submit" name="register" formaction="register.html">Register</button>
                                                                     <br /><br /><a href="index.php">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                     <a href="forgot_password.php">Forgot Password?</a>
-                                                                </form>
+                                                                </form> -->
 
                                                             </div>
                                                         </div>
